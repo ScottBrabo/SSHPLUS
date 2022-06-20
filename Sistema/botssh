@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-#--------@SCOTTSSH-----------#
+#--------@🧑‍💻[GERE SEU TESTE GRATIS]🧑‍💻-----------#
 source ShellBot.sh
 touch lista
 [[ -z $1 ]] && {
