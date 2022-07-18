@@ -100,8 +100,3 @@ while :; do
     ) &
   done
 done
-
-
-
-
-
