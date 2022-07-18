@@ -33,7 +33,7 @@ criarteste() {
         --text "😁️ VOCÊ JA CRIOU SEU TESTE HOJE 😁️"
       return 0
     }
-    usuario=$(echo teste$(( RANDOM% + 99 )))
+    usuario=$(echo TESTE$(( RANDOM% + 999 )))
     senha=$((RANDOM% + 999999))
     limite='1'
     tempo='1'
@@ -53,21 +53,10 @@ rm -rf /etc/SSHPlus/userteste/$usuario.sh" > /etc/SSHPlus/userteste/$usuario.sh
     echo ${callback_query_from_id} >> lista
     # - ENVIA O SSH
     ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
-    --text "$(echo -e "✅ <b>Criado com sucesso</b> ✅\n\n🌐SERVIDOR: BRASIL [01]\n👤USUARIO: <code>$usuario</code>\n🔑SENHA: <code>$senha</code>\<n\n⏳ Expira em: $tempo Hora")" \
+    --text "$(echo -e "✅ <b>Criado com sucesso</b> ✅\n\nUSUARIO: <code>$usuario</code>\nSENHA: <code>$senha</code>\n\n⏳ Expira em: $tempo Hora")" \
     --parse_mode html
     return 0
 }
-
-#enviar app
-enviarapp() {
-    ShellBot.answerCallbackQuery --callback_query_id ${callback_query_id[$id]} \
-        --text "⬇️️ ENVIANDO APLICATIVO, AGUARDE..."
-    ShellBot.sendDocument --chat_id ${callback_query_message_chat_id} \
-        --document "@/root/MT4G V1.0.2.apk" \
-    return 0
-
-
-    }
 
 #informacoes usuario
 infouser () {
