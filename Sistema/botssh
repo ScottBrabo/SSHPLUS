@@ -60,7 +60,7 @@ rm -rf /etc/SSHPlus/userteste/$usuario.sh" > /etc/SSHPlus/userteste/$usuario.sh
 #enviar app
 enviarapp() {
     ShellBot.answerCallbackQuery --callback_query_id ${callback_query_id[$id]} \
-        --text "♻️ ENVIANDO APLICATIVO, AGUARDE..."
+        --text "♻️ ENVIANDO APLICATIVO, AGUARDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE..."
     ShellBot.sendDocument --chat_id ${callback_query_message_chat_id} \
         --document "@/root/app.apk" \
     return 0
