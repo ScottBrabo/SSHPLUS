@@ -14,7 +14,7 @@ ShellBot.username
 # - Funcao menu
 menu() {
     local msg
-    --text "$(echo -e 🧑‍💻)" \
+    --text "$(echo -e "🧑‍💻")" \
         msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
         msg+="<b>🤖 OLA SEJA BEM VINDO(a) 🤖</b>\n"
         msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
