@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-#--------@scottssh-----------#
+#--------@ALFAINTERNET-----------#
 source ShellBot.sh
 touch lista
 [[ -z $1 ]] && {
@@ -13,8 +13,7 @@ ShellBot.username
 
 # - Funcao menu
 menu() {
-    local msg
-        msg="🤖"
+    msg="🤖"
         msg="________________________________\n"
         msg+="<b>|🧑‍💻 OLA SEJA BEM VINDO(a) 🧑‍💻|</b>\n"
         msg+="—————————————————––\n|😁Gere seu teste agora mesmo!|\n| ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ    ㅤ |\n| Esse teste será de apenas 1 h   |\n| ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ     |\n| Caso goste compre o acesso    |\n| premium que dura o mês todo. |\n| por apenas 💸15,00😉 ㅤㅤㅤ   |\n—————————————————––\n\nAproveite. 😉 ass @scottssh"
@@ -53,7 +52,7 @@ rm -rf /etc/SSHPlus/userteste/$usuario.sh" > /etc/SSHPlus/userteste/$usuario.sh
     # - ENVIA O SSH
     ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
     --text "$(echo -e ""✅ <b>Criado com sucesso</b> ✅\n\n🌐SERVIDOR: BRASIL [01]\n👤USUARIO: <code>$usuario</code>\n🔑SENHA: <code>$senha</code>\<n\n⏳ Expira em: $tempo Hora")" \
-     --parse_mode html
+    --parse_mode html
     return 0
 }
 
@@ -62,7 +61,7 @@ enviarapp() {
     ShellBot.answerCallbackQuery --callback_query_id ${callback_query_id[$id]} \
         --text "♻️ ENVIANDO APLICATIVO, AGUARDE..."
     ShellBot.sendDocument --chat_id ${callback_query_message_chat_id} \
-        --document "@/root/MT4G V1.0.2.apk" \
+        --document "@/root/MT4G 1.0.2.apk" \
     return 0
 
 
